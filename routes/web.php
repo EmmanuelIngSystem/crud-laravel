@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController; // importamos el controlador para usarlo dentro del middleware
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// route default to create project
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::middleware('auth')->group(function () {
+    Route::resource('projects', ProjectController::class); // para que funcione ProjectController::class debemos al menos crear el emtodo index en el controller deseado
+// });
