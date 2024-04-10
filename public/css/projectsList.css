@@ -1,0 +1,116 @@
+.title_project_list, .title_table_project_list{
+    font-size: 30px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    width: 100%;
+    height: 65px;
+}
+
+.container_main{
+    max-width: 100%;
+    height: 88vh;
+    padding: 50px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    border-radius: 20px;
+    margin: 15px 10px;
+}
+
+.container_title_table_button_create{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: right;
+    align-items: center;
+}
+
+.title_table_project_list{
+    font-size: 45px;
+    height: 70px;
+    background: none;
+}
+
+.butto_create{
+    text-decoration: none;
+    color: #fff;
+    background-color: #7f38a2;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.butto_create:hover{
+    background-color: #7b00d9;
+    border-color: #AA66CC;
+}
+
+.table_data{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.tr_headers, .tr_fields{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    text-align: center;
+}
+
+.tr_fields:hover{
+    background: #fff;
+}
+
+.tr_headers{
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+
+.tr_no_projects{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.td_data{
+    border-bottom: 1px #c4c5c5 solid;
+    padding: 5px 0px;
+}
+
+.container_buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button_edit, .button_view{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.button_edit:hover, .button_view:hover{
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.button_delete{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.button_delete:hover{
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    cursor: pointer;
+}

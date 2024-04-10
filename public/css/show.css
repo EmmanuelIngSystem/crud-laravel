@@ -1,0 +1,74 @@
+.title_show, .title_project{
+    font-size: 30px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    width: 100%;
+    height: 65px;
+}
+
+.container_main{
+    max-width: 100%;
+    height: 88vh;
+    padding: 50px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    border-radius: 20px;
+    margin: 15px 10px;
+}
+
+.margin_between_columns{
+    margin: 15px 15px 15px 0px;
+}
+
+.container_buttons{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+    grid-gap: 10px;
+}
+
+.btn_link{
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.butto_update_project{
+    color: #fff;
+    background-color: #7f38a2;
+    border-color: #AA66CC;
+}
+
+.butto_update_project:hover{
+    background-color: #7b00d9;
+    border-color: #AA66CC;
+    cursor: pointer;
+}
+
+.butto_return{
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.butto_return:hover{
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.button_delete{
+    width: 100%;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.button_delete:hover{
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    cursor: pointer;
+}
+
+.size_paragraph{
+    font-size: x-large;
+}
