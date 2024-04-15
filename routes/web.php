@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProjectController; // importamos el controlador para usarlo dentro del middleware
+use App\Http\Controllers\ProjectController; // we import the controller to use it within the middleware
 
 /*
 |--------------------------------------------------------------------------
