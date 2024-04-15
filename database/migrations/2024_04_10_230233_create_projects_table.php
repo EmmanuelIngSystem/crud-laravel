@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            // $table->foreignIdFor(User::class);
             $table->string('name', 100);
             $table->text('description');
-            $table->timestamps(); // con este creamos las columnas "created_at" y "updated_at"
+            $table->timestamps(); // With this we create the columns "created_at" y "updated_at"
         });
     }
 

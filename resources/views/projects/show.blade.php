@@ -15,17 +15,15 @@
     </head>
 
 <body>
-    <!-- detalle del proyecto con título, descripción y autor -->
+    <!-- Project detail with title, description and author -->
     <h2 class="title_show">
         {{ __('Detalle del proyecto') }}
     </h2>
 
     <div class="container_main">
-        <!-- <div> -->
-            <h1 class="title_project margin_between_columns">{{ $project->name }}</h1>
-            <p class="margin_between_columns size_paragraph">{{ $project->description }}</p>
-            <p class="margin_between_columns size_paragraph">{{ $project->created_at->diffForHumans() }}</p>
-        <!-- </div> -->
+        <h1 class="title_project margin_between_columns">{{ $project->name }}</h1>
+        <p class="margin_between_columns size_paragraph">{{ $project->description }}</p>
+        <p class="margin_between_columns size_paragraph">{{ $project->created_at->diffForHumans() }}</p>
         <div class="container_buttons margin_between_columns">
             <a class="btn_link butto_return" href="{{ route('projects.index') }}">{{ __('Volver') }}</a>
             <a class="btn_link butto_update_project" href="{{ route('projects.edit', $project) }}">{{ __('Editar') }}</a>

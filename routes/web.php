@@ -15,11 +15,8 @@ use App\Http\Controllers\ProjectController; // importamos el controlador para us
 */
 
 // route default to create project
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::middleware('auth')->group(function () {
-    Route::resource('projects', ProjectController::class); // para que funcione ProjectController::class debemos al menos crear el emtodo index en el controller deseado
-// });
+Route::resource('projects', ProjectController::class); // For Project Controller::class to work we must at least create the index method in the desired controller

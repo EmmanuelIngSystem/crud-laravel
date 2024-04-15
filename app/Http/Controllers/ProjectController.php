@@ -10,8 +10,7 @@ use Illuminate\Http\RedirectResponse;
 class ProjectController extends Controller
 {
     public function index(): Renderable{
-        // dd(Project::paginate());
-        $projects = Project::paginate(); // por defecto hace un paginado de 15 registros por pagina. Tambien puedes indicarlos los que desees por parametro
+        $projects = Project::paginate(); // By default, it paginates 15 records per page. You can also indicate the ones you want by parameter.
         return view('projectsList', compact('projects'));
     }
 
@@ -29,11 +28,11 @@ class ProjectController extends Controller
             'string'    => 'El :attribute debe ser un texto.',
             'unique'    => 'El :attribute debe ser unico.',
             'max'    => 'El :attribute excedio la longitud permitida.',
-        ]; // personalizamos los mensajes de las validaciones
+        ]; // Customize validation messages
         $request->validate([
             'name' => 'required|unique:projects,name|string|max:10',
             'description' => 'required|string|max:1000'
-        ], $messages); // pasamos como parametro del validate laravel la variable de personalziacion de mensajes
+        ], $messages); // Pass the message customization variable as a parameter to validate Laravel
         Project::create([
             'name' => $request->string('name'),
             'description' => $request->string('description')
@@ -59,11 +58,11 @@ class ProjectController extends Controller
             'string'    => 'El :attribute debe ser un texto.',
             'unique'    => 'El :attribute debe ser unico.',
             'max'    => 'El :attribute excedio la longitud permitida.',
-        ]; // personalizamos los mensajes de las validaciones
+        ];
         $request->validate([
             'name' => 'required|unique:projects,name,' . $project->id . '|string|max:100',
             'description' => 'required|string|max:1000'
-        ], $messages); // pasamos como parametro del validate laravel la variable de personalziacion de mensajes
+        ], $messages);
         $project->update([
             'name' => $request->string('name'),
             'description' => $request->string('description')

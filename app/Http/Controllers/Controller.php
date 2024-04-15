@@ -1,4 +1,5 @@
 <?php
+// Default generated controller
 
 namespace App\Http\Controllers;
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Agregue el CDN de twalind css por la paginacion ya que no pude hacer con css custom o nativo -->
+        <!-- Add the tailwind css CDN for the pagination since I couldn't do it with custom or native css -->
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Listado de proyectos</title>
 
